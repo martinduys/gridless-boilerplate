@@ -9,6 +9,7 @@ Main features
 -------------
 
 - [Responsive](http://www.alistapart.com/articles/responsive-web-design) (responds to the user's device screen width with the correct content and CSS)
+- Debugging and diagnostic styles to help you find the structure of your tags and bad markup
 - Progressive enhancement, [mobile first](http://www.lukew.com/ff/entry.asp?933)
 - Cross-browser compatible (even IE6 and 7)
 - CSS normalization instead of CSS reset

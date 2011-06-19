@@ -1,0 +1,74 @@
+/* 
+	Debugging styles: contains a baseline background image and debugging styles to help you see the structure of the markup
+*/
+
+/* `Debugging
+Incompatible with: .show-baseline
+---------------------------------------- */
+.debug {
+	background: rgba(255, 0, 0, 1); /* Red */
+}
+.debug * {
+	background: rgba(0, 255, 0, 1); /* Green */
+}
+.debug * * {
+	background: rgba(0, 0, 255, 1); /* Blue */
+}
+.debug * * * {
+	background: rgba(255, 0, 0, .6); /* Red .6 */
+}
+.debug * * * * {
+	background: rgba(0, 255, 0, .6); /* Green .6 */
+}
+.debug * * * * * {
+	background: rgba(0, 0, 255, .6); /* Blue .6 */ 
+}
+.debug * * * * * * {
+	background: rgba(255, 0, 0, .3); /* Red .3 */
+}
+.debug * * * * * * * {
+	background: rgba(0, 255, 0, .3); /* Green .3 */
+}
+.debug * * * * * * * * {
+	background: rgba(0, 0, 255, .3); /* Blue .3 */
+}
+/* With outlines */
+.debug.outline {
+	outline: 2px dotted rgba(255, 0, 0, 1);
+}
+.debug.outline * {
+	outline: 2px dotted rgba(0, 255, 0, 1);
+}
+.debug.outline * * {
+	outline: 2px dotted rgba(0, 0, 255, 1);
+}
+.debug.outline * * * {
+	outline: 2px dotted rgba(255, 0, 0, .6);
+}
+.debug.outline * * * * {
+	outline: 1px solid rgba(0, 255, 0, .6);
+}
+.debug.outline * * * * * {
+	outline: 1px solid rgba(0, 0, 255, .6);
+}
+.debug.outline * * * * * * {
+	outline: 1px solid rgba(255, 0, 0, .3);
+}
+.debug.outline * * * * * * * {
+	outline: 1px solid rgba(0, 255, 0, .3);
+}
+.debug.outline * * * * * * * * {
+	outline: 1px solid rgba(0, 0, 255, .3);
+}
+
+/* `Vertical rhythm
+Incompatible with: .debug, .debug.outline
+---------------------------------------- */
+.show-baseline, .show-baseline body {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAaCAYAAAB2BDbRAAAAEElEQVQImWNgGEhwk4XrCAAEygGsuzqErAAAAABJRU5ErkJggg==') !important;
+}
+
+/* `TODO:
+	* Add diagnostic styles (maybe use some ideas from holmes.css and inuit.css?)
+	* What about including some non-semantic helper classes like H5BP?
+*/
